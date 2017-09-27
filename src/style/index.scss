@@ -1,0 +1,31 @@
+
+@import 'reset';
+
+body * {
+  box-sizing: border-box;
+}
+
+.chord-diagram {
+  padding: 10px;
+
+  .fretboard {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid black;
+      
+    .frets {
+      height: 140px;
+
+      .fret {
+        height: 100%;
+        display: inline-block;
+        border-right: 1px solid black;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
