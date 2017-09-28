@@ -6,15 +6,42 @@ body * {
 }
 
 .chord-diagram {
-  padding: 10px;
+  padding: 10px 10px 10px 35px;
 
   .fretboard {
+    height: 140px;
     width: 100%;
     max-width: 1200px;
     border: 1px solid black;
+    position: relative;
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      background: #c5c5c5;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: -5px;
+      margin-left: -5px;
+      z-index: -1000;
+    }
+
+    .double-dots {
+      .dot:first-child {
+        top: 1/6 * 100%
+      }
+
+      .dot:last-child {
+        top: 5/6 * 100%
+      }
+    }
       
     .frets {
-      height: 140px;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 0;
 
       .fret {
         height: 100%;
@@ -23,6 +50,57 @@ body * {
 
         &:last-child {
           border-right: none;
+        }
+      }
+    }
+
+    .string-container {
+      width: 100%;
+      position: relative;
+  
+      .string {
+        width: 100%;
+        border-bottom: 1px solid #c7c7c7;
+        height: 50%;
+        position: absolute;
+        z-index: -1000;
+      }
+
+      .note {
+        position: absolute;
+        margin-left: -25px;
+        margin-top: 2px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        top: 0;
+
+        * {
+          display: inline-block;
+        } 
+
+        sup {
+          font-size: 11px;
+          top: -2px;
+          position: relative;
+        }
+
+        &.root::before {
+          content: ' ';
+          background: black;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          display: block;
+          z-index: -100;
+          position: absolute;
+          left: -1px;
+          top: -1px;
         }
       }
     }
