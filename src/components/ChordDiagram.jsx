@@ -8,15 +8,9 @@ export default class ChordDiagram extends React.Component {
     this.fretCount = 13;
     this.chordDiagrams = new ChordDiagrams({
       fretCount: this.fretCount});
-    this.colorPalette = [
-      'BB453C',
-      '7D9F13',
-      'E7DB84',
-      'A2D2E9',
-      '3EB88D'
-    ];
-    this.chord = ['e', 'g', 'a', 'b', 'd'];
-    this.root = 'e';
+    this.colorPalette = props.colorPalette;
+    this.chord = props.chord;
+    this.root = props.root;
 
     this.state = { 
       diagram: this.chordDiagrams.getDiagram(this.chord.join(' '))
@@ -60,54 +54,46 @@ export default class ChordDiagram extends React.Component {
         style={{
           left: `${i * this.fretWidth()}%`,
           background: 
-            `#${this.colorPalette[this.chord.indexOf(note)]}`
+            `#${this.colorPalette[note]}`
         }}>{this.renderNoteLabel(note)}
       </div>) : null;
   }
 
-  renderStrings() {
+  renderString(string, i) {
     return (
-      this.state.diagram.map((string, i) => {
-        return (
-          <div style={{height: `${this.stringSpacing()}%`}} 
-            className='string-container' key={i}>
+      <div style={{height: `${this.stringSpacing()}%`}} 
+        className='string-container' key={i}>
 
-            {[<div className='string' key={`string-${i}`}></div>]
-              .concat(
-                string.map((note, j) => {
-                    return this.renderNote(note, j);
-                }))}
-          </div>);
-      }));
+        {[<div className='string' key={`string-${i}`}></div>]
+          .concat(string.map(this.renderNote.bind(this)))}
+      </div>);
+  }
+
+  renderStrings() {
+    return this.state.diagram.map(this.renderString.bind(this));
+  }
+
+  renderDot(fret, i) {
+    return <div className='dot'
+      key={i}
+      style={{
+        left: 
+          `${fret * this.fretWidth() - this.fretWidth() / 2}%`,
+      }}>
+      </div>;
   }
 
   renderDots() {
     return [3, 5, 7, 9, 15, 17]
       .filter((fret) => fret < this.fretCount)
-      .map((fret, i) => {
-        return <div className='dot'
-          key={i}
-          style={{
-            left: 
-              `${fret * this.fretWidth() - this.fretWidth() / 2}%`,
-          }}>
-          </div>;
-      });
+      .map(this.renderDot.bind(this));
   }
 
   renderDoubleDots() {
     return <div className='double-dots'>
       {[12, 12]
         .filter((fret) => fret < this.fretCount)
-        .map((fret, i) => {
-          return <div className='dot'
-            key={i}
-            style={{
-              left: 
-                `${fret * this.fretWidth() - this.fretWidth() / 2}%`,
-            }}>
-            </div>;
-        })}
+        .map(this.renderDot.bind(this))}
       </div>;
   }
 
