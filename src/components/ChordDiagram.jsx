@@ -5,9 +5,10 @@ export default class ChordDiagram extends React.Component {
   constructor(props) {
     super(props);
 
-    this.fretCount = 13;
+    this.tuning = props.tuning;
+    this.fretCount = props.fretCount || 13;
     this.chordDiagrams = new ChordDiagrams({
-      fretCount: this.fretCount});
+      fretCount: this.fretCount, tuning: this.tuning});
     this.colorPalette = props.colorPalette;
     this.chord = props.chord;
     this.root = props.root;
@@ -100,6 +101,7 @@ export default class ChordDiagram extends React.Component {
   render() {
     return (
      <div className='chord-diagram'>
+        <div className='title'>{this.props.title}</div>
         <div className='fretboard'>
           {this.renderStrings()}
           {this.renderFrets()}
