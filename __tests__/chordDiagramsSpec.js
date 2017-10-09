@@ -8,9 +8,10 @@ describe("ChordDiagrams", () => {
       it(`returns a multidimensional array of strings representing frets matching the notes passed 
         in the parameter`, () => {
 
-        let chordDiagrams = new ChordDiagrams({fretCount: 23});
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 23, notes: 'e'});
 
-        expect(chordDiagrams.getDiagram('e')).toEqual([
+        expect(chordDiagrams.getDiagram()).toEqual([
         // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
           ['e','','','', '','','','', '','','','', 'e','','','', '','','','', '','','',''],
         // b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
@@ -32,9 +33,12 @@ describe("ChordDiagrams", () => {
       it(`returns a multidimensional array of strings representing frets matching the notes passed 
         in the parameter`, () => {
 
-        let chordDiagrams = new ChordDiagrams({fretCount: 23});
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 23,
+          notes: 'e g# b'
+        });
 
-        expect(chordDiagrams.getDiagram('e g# b')).toEqual([
+        expect(chordDiagrams.getDiagram()).toEqual([
         // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
           ['e','','','', 'g#','','','b', '','','','', 'e','','','', 'g#','','','b', '','','',''],
         // b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
@@ -57,9 +61,13 @@ describe("ChordDiagrams", () => {
     it(`returns a multidimensional array of strings representing frets matching the notes passed 
       in the parameter`, () => {
 
-      let chordDiagrams = new ChordDiagrams({fretCount: 18, tuning: ['g', 'c', 'e', 'a']});
+      let chordDiagrams = new ChordDiagrams({
+        fretCount: 18, 
+        tuning: ['g', 'c', 'e', 'a'],
+        notes: 'e g# b'
+      });
 
-      expect(chordDiagrams.getDiagram('e g# b')).toEqual([
+      expect(chordDiagrams.getDiagram()).toEqual([
       // a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
         ['','','b', '','','','', 'e','','','', 'g#','','','b', '','','',''],
       // e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#

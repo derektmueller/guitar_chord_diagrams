@@ -7,14 +7,16 @@ export default class ChordDiagram extends React.Component {
 
     this.tuning = props.tuning;
     this.fretCount = props.fretCount || 13;
-    this.chordDiagrams = new ChordDiagrams({
-      fretCount: this.fretCount, tuning: this.tuning});
+    this.chordDiagrams = props.diagram || new ChordDiagrams({
+      fretCount: this.fretCount, 
+      tuning: this.tuning, 
+      notes: props.chord.join(' ')
+    });
     this.colorPalette = props.colorPalette;
-    this.chord = props.chord;
     this.root = props.root;
 
     this.state = { 
-      diagram: this.chordDiagrams.getDiagram(this.chord.join(' '))
+      diagram: this.chordDiagrams.getDiagram()
     }
   }
 
@@ -54,8 +56,7 @@ export default class ChordDiagram extends React.Component {
         key={`node-${i}`} 
         style={{
           left: `${i * this.fretWidth()}%`,
-          background: 
-            `#${this.colorPalette[note]}`
+          background: `#${this.colorPalette[note]}`
         }}>{this.renderNoteLabel(note)}
       </div>) : null;
   }
