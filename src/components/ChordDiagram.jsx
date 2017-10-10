@@ -2,35 +2,17 @@ import React from 'react';
 import ChordDiagrams from '../../lib/ChordDiagrams.js';
 
 export default class ChordDiagram extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.tuning = props.tuning;
-    this.fretCount = props.fretCount || 13;
-    this.chordDiagrams = props.diagram || new ChordDiagrams({
-      fretCount: this.fretCount, 
-      tuning: this.tuning, 
-      notes: props.chord.join(' ')
-    });
-    this.colorPalette = props.colorPalette;
-    this.root = props.root;
-
-    this.state = { 
-      diagram: this.chordDiagrams.getDiagram()
-    }
-  }
-
   fretWidth() {
-    return 1 / (this.fretCount) * 100;
+    return 1 / (this.props.chordDiagrams.fretCount) * 100;
   }
 
   stringSpacing() {
-    return 1 / (this.chordDiagrams.tuning.length) * 100;
+    return 1 / (this.props.chordDiagrams.tuning.length) * 100;
   }
 
   renderFrets() {
     return (<div className='frets'>
-      {(new Array(this.chordDiagrams.fretCount).fill(null)).map(
+      {(new Array(this.props.chordDiagrams.fretCount).fill(null)).map(
         (_, i) => {
           return <div className='fret' key={i} 
             style={{width: `${this.fretWidth()}%`}}></div>;
@@ -52,11 +34,11 @@ export default class ChordDiagram extends React.Component {
   renderNote(note, i) {
     return note ? 
       (<div 
-        className={`note ${this.root === note ? ' root' : ''}`}
+        className={`note ${this.props.root === note ? ' root' : ''}`}
         key={`node-${i}`} 
         style={{
           left: `${i * this.fretWidth()}%`,
-          background: `#${this.colorPalette[note]}`
+          background: `#${this.props.colorPalette[note]}`
         }}>{this.renderNoteLabel(note)}
       </div>) : null;
   }
@@ -72,7 +54,8 @@ export default class ChordDiagram extends React.Component {
   }
 
   renderStrings() {
-    return this.state.diagram.map(this.renderString.bind(this));
+    return this.props.chordDiagrams.getDiagram().map(
+      this.renderString.bind(this));
   }
 
   renderDot(fret, i) {
@@ -87,14 +70,14 @@ export default class ChordDiagram extends React.Component {
 
   renderDots() {
     return [3, 5, 7, 9, 15, 17]
-      .filter((fret) => fret < this.fretCount)
+      .filter((fret) => fret < this.props.chordDiagrams.fretCount)
       .map(this.renderDot.bind(this));
   }
 
   renderDoubleDots() {
     return <div className='double-dots'>
       {[12, 12]
-        .filter((fret) => fret < this.fretCount)
+        .filter((fret) => fret < this.props.chordDiagrams.fretCount)
         .map(this.renderDot.bind(this))}
       </div>;
   }

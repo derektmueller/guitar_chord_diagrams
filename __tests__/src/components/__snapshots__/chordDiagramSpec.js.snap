@@ -1,0 +1,1655 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creating chord diagrams renders correctly 1`] = `
+<div
+  id="app"
+>
+  <div
+    className="chord-diagram"
+  >
+    <div
+      className="title"
+    >
+      e minor pentatonic
+    </div>
+    <div
+      className="fretboard"
+    >
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "61.53846153846154%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "30.76923076923077%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "69.23076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "69.23076923076923%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#E7DB84",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            a
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#3EB88D",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            d
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+      </div>
+      <div
+        className="frets"
+      >
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "19.23076923076923%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "34.61538461538461%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "50%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "65.38461538461539%",
+          }
+        }
+      />
+      <div
+        className="double-dots"
+      >
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="chord-diagram"
+  >
+    <div
+      className="title"
+    >
+      e minor
+    </div>
+    <div
+      className="fretboard"
+    >
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "61.53846153846154%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "30.76923076923077%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "69.23076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "38.46153846153846%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "69.23076923076923%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "16.666666666666664%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+      </div>
+      <div
+        className="frets"
+      >
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "19.23076923076923%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "34.61538461538461%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "50%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "65.38461538461539%",
+          }
+        }
+      />
+      <div
+        className="double-dots"
+      >
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="chord-diagram"
+  >
+    <div
+      className="title"
+    >
+      e minor
+    </div>
+    <div
+      className="fretboard"
+    >
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "25%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "15.384615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "76.92307692307692%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "25%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "23.076923076923077%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "25%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "30.76923076923077%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "53.84615384615385%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "84.61538461538461%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+      </div>
+      <div
+        className="string-container"
+        style={
+          Object {
+            "height": "25%",
+          }
+        }
+      >
+        <div
+          className="string"
+        />
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "0%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#A2D2E9",
+              "left": "30.76923076923077%",
+            }
+          }
+        >
+          <div>
+            b
+          </div>
+        </div>
+        <div
+          className="note  root"
+          style={
+            Object {
+              "background": "#BB453C",
+              "left": "69.23076923076923%",
+            }
+          }
+        >
+          <div>
+            e
+          </div>
+        </div>
+        <div
+          className="note "
+          style={
+            Object {
+              "background": "#7D9F13",
+              "left": "92.3076923076923%",
+            }
+          }
+        >
+          <div>
+            g
+          </div>
+        </div>
+      </div>
+      <div
+        className="frets"
+      >
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+        <div
+          className="fret"
+          style={
+            Object {
+              "width": "7.6923076923076925%",
+            }
+          }
+        />
+      </div>
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "19.23076923076923%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "34.61538461538461%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "50%",
+          }
+        }
+      />
+      <div
+        className="dot"
+        style={
+          Object {
+            "left": "65.38461538461539%",
+          }
+        }
+      />
+      <div
+        className="double-dots"
+      >
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+        <div
+          className="dot"
+          style={
+            Object {
+              "left": "88.46153846153847%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
