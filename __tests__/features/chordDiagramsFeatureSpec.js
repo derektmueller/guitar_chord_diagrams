@@ -1,12 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import App from '../../src/components/App.jsx';
+import { Index } from '../../src/components/Index.jsx';
 
 describe("creating chord diagrams", () => {
   let app;
   beforeEach(() => {
-    app = mount(<App />);
+    app = mount(<Index />);
   });
 
   function addChordDiagram() {

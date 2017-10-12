@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import App from '../../../src/components/App.jsx';
+import { Index } from '../../../src/components/Index.jsx';
 
 describe("creating chord diagrams", () => {
   it('renders correctly', () => {
-    let app = renderer.create(<App />);
-    expect(app.toJSON()).toMatchSnapshot();
+    let index = renderer.create(<Index />);
+    expect(index.toJSON()).toMatchSnapshot();
   });
 });
