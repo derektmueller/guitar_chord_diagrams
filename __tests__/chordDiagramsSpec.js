@@ -63,7 +63,7 @@ describe("ChordDiagrams", () => {
 
       let chordDiagrams = new ChordDiagrams({
         fretCount: 18, 
-        tuning: ['g', 'c', 'e', 'a'],
+        tuning: 'g c e a',
         notes: 'e g# b'
       });
 

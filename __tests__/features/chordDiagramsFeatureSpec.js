@@ -10,15 +10,23 @@ describe("creating chord diagrams", () => {
   });
 
   function addChordDiagram(config) {
-    app.find('.controls .title').simulate('change');
+    app.find('input[name="title"]').simulate(
+      'change', { target: { value: config.title }});
+    app.find('input[name="notes"]').simulate(
+      'change', { target: { value: config.notes }});
+    app.find('input[name="root"]').simulate(
+      'change', { target: { value: config.root }});
+    app.find('input[name="fretCount"]').simulate(
+      'change', { target: { value: config.fretCount }});
+    app.find('input[name="tuning"]').simulate(
+      'change', { target: { value: config.tuning }});
+    app.find('button[type="submit"]').simulate('submit');
   }
 
   function deleteChordDiagram() {
   }
 
   it('the user is able to create chord diagrams', () => {
-    expect(true).toEqual(true);
-
     addChordDiagram({
       title: 'e minor pentatonic',
       notes: 'e g a b d',
@@ -41,7 +49,7 @@ describe("creating chord diagrams", () => {
       title: 'e minor (ukulele)',
       notes: 'e g b',
       root: 'e',
-      tuning: ['g', 'c', 'e', 'a'],
+      tuning: 'g c e a',
       fretCount: 13
     });
 
