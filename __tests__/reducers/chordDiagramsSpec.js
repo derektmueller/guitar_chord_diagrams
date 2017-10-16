@@ -1,5 +1,5 @@
 import chordDiagrams from '../../src/reducers/chordDiagrams';
-import { ADD_CHORD_DIAGRAM } from '../../src/actions/constants';
+import { ADD_CHORD_DIAGRAM, REMOVE_CHORD_DIAGRAM } from '../../src/actions/constants';
 
 describe("chordDiagrams", () => {
   describe("initial state", () => {
@@ -9,7 +9,7 @@ describe("chordDiagrams", () => {
   });
 
   describe("ADD_CHORD_DIAGRAM", () => {
-    it("returns an empty array", () => {
+    it("adds a chord diagram", () => {
       let payload = {
         someKey: 'some-value'
       };
@@ -22,6 +22,23 @@ describe("chordDiagrams", () => {
         payload
       ]);
       expect(initalState).toEqual([]);
+    });
+  });
+
+  describe("REMOVE_CHORD_DIAGRAM", () => {
+    it("removes a chord diagram", () => {
+      let payload = {
+        index: 0
+      };
+      let initalState = [{a: 1}, {b: 2}];
+
+      expect(chordDiagrams(initalState, {
+        type: REMOVE_CHORD_DIAGRAM,
+        payload
+      })).toEqual([
+        {b: 2}
+      ]);
+      expect(initalState).toEqual([{a: 1}, {b: 2}]);
     });
   });
 });

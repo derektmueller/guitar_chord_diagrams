@@ -38,7 +38,7 @@ export default class ChordDiagram extends React.Component {
         key={`node-${i}`} 
         style={{
           left: `${i * this.fretWidth()}%`,
-          background: `#${this.props.colorPalette[note]}`
+          background: `#${this.props.colorPalette.getColor(note)}`
         }}>{this.renderNoteLabel(note)}
       </div>) : null;
   }
@@ -82,6 +82,10 @@ export default class ChordDiagram extends React.Component {
       </div>;
   }
 
+  renderDeleteButton() {
+    return <div className='delete' />;
+  }
+
   render() {
     return (
      <div className='chord-diagram'>
@@ -92,6 +96,7 @@ export default class ChordDiagram extends React.Component {
           {this.renderDots()}
           {this.renderDoubleDots()}
         </div>
+        {this.renderDeleteButton()}
      </div>
     )
   }

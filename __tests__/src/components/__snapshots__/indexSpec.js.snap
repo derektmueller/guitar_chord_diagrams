@@ -2,7 +2,7 @@
 
 exports[`creating chord diagrams renders correctly 1`] = `
 <div
-  id="app"
+  id="index"
 >
   <div
     className="diagrams"
@@ -33,7 +33,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "0%",
               }
             }
@@ -46,7 +46,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "23.076923076923077%",
               }
             }
@@ -59,7 +59,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "38.46153846153846%",
               }
             }
@@ -72,7 +72,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "53.84615384615385%",
               }
             }
@@ -85,7 +85,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "76.92307692307692%",
               }
             }
@@ -98,7 +98,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "92.3076923076923%",
               }
             }
@@ -123,7 +123,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "0%",
               }
             }
@@ -136,7 +136,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "23.076923076923077%",
               }
             }
@@ -149,7 +149,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "38.46153846153846%",
               }
             }
@@ -162,7 +162,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "61.53846153846154%",
               }
             }
@@ -175,7 +175,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "76.92307692307692%",
               }
             }
@@ -188,7 +188,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "92.3076923076923%",
               }
             }
@@ -213,7 +213,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "0%",
               }
             }
@@ -226,7 +226,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "15.384615384615385%",
               }
             }
@@ -239,7 +239,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "30.76923076923077%",
               }
             }
@@ -252,7 +252,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "53.84615384615385%",
               }
             }
@@ -265,7 +265,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "69.23076923076923%",
               }
             }
@@ -278,7 +278,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "92.3076923076923%",
               }
             }
@@ -303,7 +303,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "0%",
               }
             }
@@ -316,7 +316,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "15.384615384615385%",
               }
             }
@@ -329,7 +329,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "38.46153846153846%",
               }
             }
@@ -342,7 +342,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "53.84615384615385%",
               }
             }
@@ -355,7 +355,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "69.23076923076923%",
               }
             }
@@ -368,7 +368,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "92.3076923076923%",
               }
             }
@@ -393,7 +393,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "0%",
               }
             }
@@ -406,7 +406,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "15.384615384615385%",
               }
             }
@@ -419,7 +419,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "38.46153846153846%",
               }
             }
@@ -432,7 +432,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "53.84615384615385%",
               }
             }
@@ -445,7 +445,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "76.92307692307692%",
               }
             }
@@ -458,7 +458,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "92.3076923076923%",
               }
             }
@@ -483,7 +483,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "0%",
               }
             }
@@ -496,7 +496,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "23.076923076923077%",
               }
             }
@@ -509,7 +509,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#E7DB84",
+                "background": "#ebc844",
                 "left": "38.46153846153846%",
               }
             }
@@ -522,7 +522,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "53.84615384615385%",
               }
             }
@@ -535,7 +535,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#3EB88D",
+                "background": "#0f5b78",
                 "left": "76.92307692307692%",
               }
             }
@@ -548,7 +548,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "92.3076923076923%",
               }
             }
@@ -719,6 +719,9 @@ exports[`creating chord diagrams renders correctly 1`] = `
           />
         </div>
       </div>
+      <div
+        className="delete"
+      />
     </div>
     <div
       className="chord-diagram"
@@ -746,7 +749,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "0%",
               }
             }
@@ -759,7 +762,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "23.076923076923077%",
               }
             }
@@ -772,7 +775,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "53.84615384615385%",
               }
             }
@@ -785,7 +788,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "92.3076923076923%",
               }
             }
@@ -810,7 +813,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "0%",
               }
             }
@@ -823,7 +826,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "38.46153846153846%",
               }
             }
@@ -836,7 +839,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "61.53846153846154%",
               }
             }
@@ -849,7 +852,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "92.3076923076923%",
               }
             }
@@ -874,7 +877,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "0%",
               }
             }
@@ -887,7 +890,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "30.76923076923077%",
               }
             }
@@ -900,7 +903,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "69.23076923076923%",
               }
             }
@@ -913,7 +916,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "92.3076923076923%",
               }
             }
@@ -938,7 +941,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "15.384615384615385%",
               }
             }
@@ -951,7 +954,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "38.46153846153846%",
               }
             }
@@ -964,7 +967,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "69.23076923076923%",
               }
             }
@@ -989,7 +992,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "15.384615384615385%",
               }
             }
@@ -1002,7 +1005,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "53.84615384615385%",
               }
             }
@@ -1015,7 +1018,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "76.92307692307692%",
               }
             }
@@ -1040,7 +1043,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "0%",
               }
             }
@@ -1053,7 +1056,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "23.076923076923077%",
               }
             }
@@ -1066,7 +1069,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "53.84615384615385%",
               }
             }
@@ -1079,7 +1082,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "92.3076923076923%",
               }
             }
@@ -1250,6 +1253,9 @@ exports[`creating chord diagrams renders correctly 1`] = `
           />
         </div>
       </div>
+      <div
+        className="delete"
+      />
     </div>
     <div
       className="chord-diagram"
@@ -1277,7 +1283,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "15.384615384615385%",
               }
             }
@@ -1290,7 +1296,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "53.84615384615385%",
               }
             }
@@ -1303,7 +1309,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "76.92307692307692%",
               }
             }
@@ -1328,7 +1334,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "0%",
               }
             }
@@ -1341,7 +1347,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "23.076923076923077%",
               }
             }
@@ -1354,7 +1360,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "53.84615384615385%",
               }
             }
@@ -1367,7 +1373,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "92.3076923076923%",
               }
             }
@@ -1392,7 +1398,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "30.76923076923077%",
               }
             }
@@ -1405,7 +1411,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "53.84615384615385%",
               }
             }
@@ -1418,7 +1424,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "84.61538461538461%",
               }
             }
@@ -1443,7 +1449,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "0%",
               }
             }
@@ -1456,7 +1462,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#A2D2E9",
+                "background": "#5ca793",
                 "left": "30.76923076923077%",
               }
             }
@@ -1469,7 +1475,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note  root"
             style={
               Object {
-                "background": "#BB453C",
+                "background": "#c02e1d",
                 "left": "69.23076923076923%",
               }
             }
@@ -1482,7 +1488,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#7D9F13",
+                "background": "#ef8b2c",
                 "left": "92.3076923076923%",
               }
             }
@@ -1653,6 +1659,9 @@ exports[`creating chord diagrams renders correctly 1`] = `
           />
         </div>
       </div>
+      <div
+        className="delete"
+      />
     </div>
   </div>
 </div>

@@ -2,24 +2,18 @@ import React from 'react';
 import ChordDiagram from "./ChordDiagram.jsx";
 import ChordConfig from "./ChordConfig.jsx";
 import ChordDiagrams from '../../lib/ChordDiagrams.js';
+import ColorPalette from '../../lib/ColorPalette.js';
 import { addChordDiagram } from '../actions/chordDiagrams'
 import { connect } from 'react-redux'
 
 class ChordDiagramModel {
   constructor({fretCount, notes, tuning, title, root}) {
-    let colorPalette = {
-      e: 'BB453C',
-      g: '7D9F13',
-      a: 'E7DB84',
-      b: 'A2D2E9',
-      d: '3EB88D'
-    };
     Object.assign(this, {
       chordDiagrams: new ChordDiagrams({
-        fretCount: parseInt(fretCount, 10), notes, tuning
+        fretCount: fretCount, notes: notes, tuning
       }),
       title,
-      colorPalette,
+      colorPalette: new ColorPalette,
       root
     });
   }
@@ -29,12 +23,12 @@ export class Index extends React.Component {
   constructor(props) {
     super(props);
 
-//    this.props.addChordDiagram({ 
-//        fretCount: 13, 
-//        notes: 'e g a b d',
-//        title: "e minor pentatonic",
-//        root: 'e'
-//    });
+    this.props.addChordDiagram({ 
+        fretCount: 13, 
+        notes: 'e g a b d',
+        title: "e minor pentatonic",
+        root: 'e'
+    });
 //    this.props.addChordDiagram({ 
 //        fretCount: 13, 
 //        notes: 'e g b',
@@ -53,7 +47,7 @@ export class Index extends React.Component {
   renderDiagrams() {
     return this.props.chordDiagrams.map((chordDiagram, i) => {
       return <ChordDiagram 
-        {...new ChordDiagramModel(chordDiagram)}
+        {...new ChordDiagramModel(Object.assign({index: i}, chordDiagram))}
         key={i}
       />;
     });
@@ -61,11 +55,11 @@ export class Index extends React.Component {
 
   render() {
     return (
-      <div id='app'>
-        <ChordConfig />
+      <div id='index'>
         <div className='diagrams'>
-        {this.renderDiagrams()}
-      </div>
+          {this.renderDiagrams()}
+        </div>
+        <ChordConfig />
     </div>);
   }
 }

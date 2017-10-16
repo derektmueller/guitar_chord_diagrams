@@ -24,6 +24,7 @@ describe("creating chord diagrams", () => {
   }
 
   function deleteChordDiagram() {
+    app.find('.chord-diagram .delete').first().simulate('click');
   }
 
   it('the user is able to create chord diagrams', () => {
@@ -55,9 +56,9 @@ describe("creating chord diagrams", () => {
 
     expect(app.text()).toMatch('e minor (ukulele)');
 
-//    deleteChordDiagram('e minor pentatonic');
-//
-//    expect(app.text()).not.toMatch('e minor pentatonic');
+    deleteChordDiagram();
+
+    expect(app.text()).not.toMatch('e minor pentatonic');
 //
 //    deleteChordDiagram('e minor');
 //

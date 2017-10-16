@@ -1,15 +1,48 @@
 describe("ChordDiagrams", () => {
-  let ChordDiagrams = require('../lib/ChordDiagrams.js');
-
-  // ideas: alternate tunings, variable fret count, number of strings
+  let ChordDiagrams = require('../../lib/ChordDiagrams.js');
 
   describe("getDiagram", () => {
+    describe("when no notes are passed in", () => {
+      it(`returns an empty fretboard`, () => {
+
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 23});
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','',''],
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','',''],
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','',''],
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','',''],
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','',''],
+          ['','','','', '','','','', '','','','', '','','','', '','','','', '','','','']
+        ]);    
+      });
+    });
     describe("when passed a single note is passed in", () => {
       it(`returns a multidimensional array of strings representing frets matching the notes passed 
         in the parameter`, () => {
 
         let chordDiagrams = new ChordDiagrams({
           fretCount: 23, notes: 'e'});
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+        // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
+          ['e','','','', '','','','', '','','','', 'e','','','', '','','','', '','','',''],
+        // b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
+          ['','','','', '','e','','', '','','','', '','','','', '','e','','', '','','',''],
+        // g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#
+          ['','','','', '','','','', '','e','','', '','','','', '','','','', '','e','',''],
+
+        // d  d# e  f   f# g  g# a   a# b  c  c#  d  d# e  f   f# g  g# a   a# b  c  c#
+          ['','','e','', '','','','', '','','','', '','','e','', '','','','', '','','',''],
+        // a  a# b  c   c# d  d# e   f  f# g  g#  a  a# b  c   c# d  d# e   f  f# g  g#
+          ['','','','', '','','','e', '','','','', '','','','', '','','','e', '','','',''],
+        // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
+          ['e','','','', '','','','', '','','','', 'e','','','', '','','','', '','','','']
+        ]);    
+
+        chordDiagrams = new ChordDiagrams({
+          fretCount: '23', notes: 'e'});
 
         expect(chordDiagrams.getDiagram()).toEqual([
         // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#

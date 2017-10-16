@@ -5,7 +5,33 @@ body * {
   box-sizing: border-box;
 }
 
+.config {
+  text-align: center;
+  padding: 10px 10px 30px;
+
+  .input-container {
+    margin-bottom: 5px;
+
+    label {
+      display: block;
+      padding-bottom: 5px;
+    }
+  }
+
+  button {
+    margin-top: 15px;
+    width: 150px;
+  }
+
+  input {
+    width: 150px;
+  }
+}
+
 .chord-diagram {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   padding: 10px 10px 10px 35px;
 
   .title {
@@ -15,8 +41,6 @@ body * {
 
   .fretboard {
     height: 140px;
-    width: 100%;
-    max-width: 1200px;
     border: 1px solid black;
     position: relative;
 
