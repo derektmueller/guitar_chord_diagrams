@@ -19,11 +19,13 @@ let ChordConfig = ({handleSubmit}) => {
     </div>
     <div className='input-container'>
       <label htmlFor="fretCount">Number of Frets</label>
-      <Field name="fretCount" component="input" type="number" placeholder="23" />
+      <Field name="fretCount" component="input" type="number" 
+        placeholder="23" />
     </div>
     <div className='input-container'>
       <label htmlFor="tuning">Tuning</label>
-      <Field name="tuning" component="input" type="text" placeholder="e a d g b e" />
+      <Field name="tuning" component="input" type="text" 
+        placeholder="e a d g b e" />
     </div>
     <button type="submit">Create Diagram</button>
   </form>);

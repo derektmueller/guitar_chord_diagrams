@@ -721,6 +721,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
       </div>
       <div
         className="delete"
+        onClick={[Function]}
       />
     </div>
     <div
@@ -1255,6 +1256,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
       </div>
       <div
         className="delete"
+        onClick={[Function]}
       />
     </div>
     <div
@@ -1661,6 +1663,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
       </div>
       <div
         className="delete"
+        onClick={[Function]}
       />
     </div>
   </div>

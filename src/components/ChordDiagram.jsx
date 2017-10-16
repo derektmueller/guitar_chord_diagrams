@@ -1,7 +1,9 @@
 import React from 'react';
 import ChordDiagrams from '../../lib/ChordDiagrams.js';
+import { removeChordDiagram } from '../actions/chordDiagrams'
+import { connect } from 'react-redux'
 
-export default class ChordDiagram extends React.Component {
+export class ChordDiagram extends React.Component {
   fretWidth() {
     return 1 / (this.props.chordDiagrams.fretCount) * 100;
   }
@@ -83,7 +85,12 @@ export default class ChordDiagram extends React.Component {
   }
 
   renderDeleteButton() {
-    return <div className='delete' />;
+    return <div 
+      className='delete' 
+      onClick={() => 
+        this.props.removeChordDiagram(this.props.index)
+      } 
+    />;
   }
 
   render() {
@@ -101,3 +108,14 @@ export default class ChordDiagram extends React.Component {
     )
   }
 }
+
+export default connect(
+  undefined,
+  dispatch => { 
+    return { 
+      removeChordDiagram: (index) => {
+        return dispatch(removeChordDiagram(index));
+      }
+    }; 
+  }
+)(ChordDiagram);

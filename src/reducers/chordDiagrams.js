@@ -1,4 +1,6 @@
-import { ADD_CHORD_DIAGRAM, REMOVE_CHORD_DIAGRAM } from '../actions/constants';
+import { 
+  ADD_CHORD_DIAGRAM, REMOVE_CHORD_DIAGRAM 
+} from '../actions/constants';
 
 export default function chordDiagrams(state=[], action) {
   switch (action.type) {

@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
-
 import App from '../../src/components/App.jsx';
+
+jest.unmock('react-redux');
 
 describe("creating chord diagrams", () => {
   let app;
@@ -59,13 +60,13 @@ describe("creating chord diagrams", () => {
     deleteChordDiagram();
 
     expect(app.text()).not.toMatch('e minor pentatonic');
-//
-//    deleteChordDiagram('e minor');
-//
-//    expect(app.text()).not.toMatch('e minor (guitar)');
-//
-//    deleteChordDiagram('e minor');
-//
-//    expect(app.text()).not.toMatch('e minor (ukulele)');
+
+    deleteChordDiagram();
+
+    expect(app.text()).not.toMatch('e minor (guitar)');
+
+    deleteChordDiagram();
+
+    expect(app.text()).not.toMatch('e minor (ukulele)');
   });
 });

@@ -7,8 +7,9 @@ import { addChordDiagram } from '../actions/chordDiagrams'
 import { connect } from 'react-redux'
 
 class ChordDiagramModel {
-  constructor({fretCount, notes, tuning, title, root}) {
+  constructor({index, fretCount, notes, tuning, title, root}) {
     Object.assign(this, {
+      index,
       chordDiagrams: new ChordDiagrams({
         fretCount: fretCount, notes: notes, tuning
       }),
@@ -23,12 +24,12 @@ export class Index extends React.Component {
   constructor(props) {
     super(props);
 
-    this.props.addChordDiagram({ 
-        fretCount: 13, 
-        notes: 'e g a b d',
-        title: "e minor pentatonic",
-        root: 'e'
-    });
+//    this.props.addChordDiagram({ 
+//        fretCount: 13, 
+//        notes: 'e g a b d',
+//        title: "e minor pentatonic",
+//        root: 'e'
+//    });
 //    this.props.addChordDiagram({ 
 //        fretCount: 13, 
 //        notes: 'e g b',
@@ -47,7 +48,8 @@ export class Index extends React.Component {
   renderDiagrams() {
     return this.props.chordDiagrams.map((chordDiagram, i) => {
       return <ChordDiagram 
-        {...new ChordDiagramModel(Object.assign({index: i}, chordDiagram))}
+        {...new ChordDiagramModel(
+          Object.assign({index: i}, chordDiagram))}
         key={i}
       />;
     });

@@ -33,10 +33,24 @@ body * {
   max-width: 1200px;
   margin: auto;
   padding: 10px 10px 10px 35px;
+  position: relative;
+
+  .delete {
+    &::after { 
+      content: 'x';
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-family: Arial;
+      cursor: pointer;
+    }
+  }
 
   .title {
     text-align: center;
     padding: 0 8px 8px;
+    min-height: 24px;
   }
 
   .fretboard {

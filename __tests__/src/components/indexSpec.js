@@ -1,9 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-
 import { Index } from '../../../src/components/Index';
 
 jest.mock('../../../src/components/ChordConfig');
+jest.mock('react-redux', () => { 
+  return require('../../helpers/reactReduxMock');
+});
 
 describe("creating chord diagrams", () => {
   it('renders correctly', () => {
