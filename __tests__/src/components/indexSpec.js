@@ -20,8 +20,8 @@ describe("creating chord diagrams", () => {
         },
         { 
           fretCount: 13, 
-          notes: 'e g b',
-          title: "e minor (guitar)",
+          notes: 'e g# b',
+          title: "e (guitar)",
           root: 'e'
         },
         { 

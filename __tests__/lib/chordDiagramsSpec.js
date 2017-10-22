@@ -88,6 +88,33 @@ describe("ChordDiagrams", () => {
         ]);    
       });
     });
+
+    describe("when passed a space-delimited string of notes containing flats is passed in", () => {
+      it(`returns a multidimensional array of strings representing frets matching the notes passed 
+        in the parameter`, () => {
+
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 23,
+          notes: 'e ab b'
+        });
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+        // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
+          ['e','','','', 'ab','','','b', '','','','', 'e','','','', 'ab','','','b', '','','',''],
+        // b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
+          ['b','','','', '','e','','', '','ab','','', 'b','','','', '','e','','', '','ab','',''],
+        // g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#
+          ['','ab','','', 'b','','','', '','e','','', '','ab','','', 'b','','','', '','e','',''],
+
+        // d  d# e  f   f# g  g# a   a# b  c  c#  d  d# e  f   f# g  g# a   a# b  c  c#
+          ['','','e','', '','','ab','', '','b','','', '','','e','', '','','ab','', '','b','',''],
+        // a  a# b  c   c# d  d# e   f  f# g  g#  a  a# b  c   c# d  d# e   f  f# g  g#
+          ['','','b','', '','','','e', '','','','ab', '','','b','', '','','','e', '','','','ab'],
+        // e  f  f# g   g# a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
+          ['e','','','', 'ab','','','b', '','','','', 'e','','','', 'ab','','','b', '','','','']
+        ]);    
+      });
+    });
   });
 
   describe("alternate tunings", () => {

@@ -730,7 +730,7 @@ exports[`creating chord diagrams renders correctly 1`] = `
       <div
         className="title"
       >
-        e minor (guitar)
+        e (guitar)
       </div>
       <div
         className="fretboard"
@@ -763,14 +763,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "23.076923076923077%",
+                "background": "#ecaa38",
+                "left": "30.76923076923077%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
           <div
             className="note "
@@ -840,14 +843,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "61.53846153846154%",
+                "background": "#ecaa38",
+                "left": "69.23076923076923%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
           <div
             className="note "
@@ -878,14 +884,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "0%",
+                "background": "#ecaa38",
+                "left": "7.6923076923076925%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
           <div
             className="note "
@@ -917,14 +926,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "92.3076923076923%",
+                "background": "#ecaa38",
+                "left": "100%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
         </div>
         <div
@@ -955,14 +967,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "38.46153846153846%",
+                "background": "#ecaa38",
+                "left": "46.15384615384615%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
           <div
             className="note "
@@ -1019,14 +1034,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "76.92307692307692%",
+                "background": "#ecaa38",
+                "left": "84.61538461538461%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
         </div>
         <div
@@ -1057,14 +1075,17 @@ exports[`creating chord diagrams renders correctly 1`] = `
             className="note "
             style={
               Object {
-                "background": "#ef8b2c",
-                "left": "23.076923076923077%",
+                "background": "#ecaa38",
+                "left": "30.76923076923077%",
               }
             }
           >
             <div>
               g
             </div>
+            <sup
+              className="sharp"
+            />
           </div>
           <div
             className="note "

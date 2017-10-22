@@ -24,11 +24,15 @@ export class ChordDiagram extends React.Component {
 
   renderNoteLabel(note) {
     return note.split('').map((elem, i) => {
-      switch(elem) {
-        case '#':
-          return <sup key={i}>{elem}</sup>;
-        default:
-          return <div key={i}>{elem}</div>;
+      if(i === 1) {
+        switch(elem) {
+          case 'b':
+            return <sup key={i} className='flat' />;
+          case '#':
+            return <sup key={i} className='sharp' />;
+        }
+      } else {
+        return <div key={i}>{elem}</div>;
       }
     });
   }

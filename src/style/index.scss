@@ -144,6 +144,18 @@ body {
           font-size: 11px;
           top: -2px;
           position: relative;
+
+          &.sharp {
+            &::before {
+              content: '♯';
+            }
+          }
+
+          &.flat {
+            &::before {
+              content: '♭';
+            }
+          }
         }
 
         &.root::before {
