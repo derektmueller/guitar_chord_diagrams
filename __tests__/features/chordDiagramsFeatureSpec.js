@@ -1,12 +1,17 @@
+import "babel-polyfill";
 import React from 'react';
 import { mount } from 'enzyme';
 import App from '../../src/components/App.jsx';
 
-jest.unmock('react-redux');
-
 describe("creating chord diagrams", () => {
   let app;
+
+  function mockPushState() {
+    history.replaceState = () => {};
+  }
+
   beforeEach(() => {
+    mockPushState();
     app = mount(<App />);
   });
 
