@@ -21,13 +21,21 @@ export default class UrlState {
     return Object.assign.apply(
       null, [{}].concat(
         Object.entries(queryString.parse(location.search)).
-          map(([stateKey, state]) => {
-            return {[stateKey]: this.parseUrlState(
-              stateKey, state)};
-          })));
+          filter(this.filterUnmappedParams.bind(this)).
+          map(this.getReduxStateFromUrlState.bind(this))
+        ));
   }
 
   private
+
+  filterUnmappedParams([urlStateKey, _]) {
+    return this.reducers.includes(urlStateKey);
+  }
+
+  getReduxStateFromUrlState([urlStateKey, urlStateValue]) {
+    return {[urlStateKey]: this.parseUrlState(
+      urlStateKey, urlStateValue)};
+  }
 
   parseUrlState(stateKey, state) {
     let urlState;
@@ -35,15 +43,16 @@ export default class UrlState {
     try {
       urlState = JSON.parse(state);
     } catch(e) {
-      urlState = this.reducers[stateKey](undefined, {type: null});
+      urlState = undefined;
     }
 
     return urlState;
   }
 
   getQueryString(state) {
-    return `?${Object.keys(this.reducers).map((reducerName) => {
-      return `${reducerName}=${JSON.stringify(state[reducerName])}`;
+    return `?${this.reducers.map((reducerName) => {
+      return `${reducerName}=${
+        encodeURIComponent(JSON.stringify(state[reducerName]))}`;
     }).join('&')}`;
   }
 }

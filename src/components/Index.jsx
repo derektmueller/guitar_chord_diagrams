@@ -23,26 +23,6 @@ class ChordDiagramModel {
 export class Index extends React.Component {
   constructor(props) {
     super(props);
-
-//    this.props.addChordDiagram({ 
-//        fretCount: 13, 
-//        notes: 'e g a b d',
-//        title: "e minor pentatonic",
-//        root: 'e'
-//    });
-//    this.props.addChordDiagram({ 
-//        fretCount: 13, 
-//        notes: 'e g b',
-//        title: "e minor (guitar)",
-//        root: 'e'
-//    });
-//    this.props.addChordDiagram({ 
-//        fretCount: 13, 
-//        notes: 'e g b',
-//        title: "e minor (ukulele)",
-//        tuning: 'g c e a',
-//        root: 'e'
-//    });
   }
 
   renderDiagrams() {

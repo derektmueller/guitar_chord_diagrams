@@ -5,9 +5,17 @@ body * {
   box-sizing: border-box;
 }
 
+body {
+  min-width: 730px;
+}
+
 .config {
   text-align: center;
   padding: 10px 10px 30px;
+
+  @media print {
+    display: none;
+  }
 
   .input-container {
     margin-bottom: 5px;
