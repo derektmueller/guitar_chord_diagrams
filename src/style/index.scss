@@ -44,6 +44,10 @@ body {
   position: relative;
 
   .delete {
+    @media print {
+      display: none;
+    }
+
     &::after { 
       content: 'x';
       display: block;
@@ -105,10 +109,24 @@ body {
       }
     }
 
+    .fret-numbers {
+      position: absolute;
+      top: -21px;
+      width: 100%;
+
+      .fret-number {
+        font-family: Arial;
+        display: inline-block;
+        text-align: center;
+        font-size: 11px;
+        color: gray;
+      }
+    }
+  
     .string-container {
       width: 100%;
       position: relative;
-  
+
       .string {
         width: 100%;
         border-bottom: 1px solid #c7c7c7;

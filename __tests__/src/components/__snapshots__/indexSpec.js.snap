@@ -19,6 +19,140 @@ exports[`creating chord diagrams renders correctly 1`] = `
         className="fretboard"
       >
         <div
+          className="fret-numbers"
+        >
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            13
+          </div>
+        </div>
+        <div
           className="string-container"
           style={
             Object {
@@ -736,6 +870,140 @@ exports[`creating chord diagrams renders correctly 1`] = `
         className="fretboard"
       >
         <div
+          className="fret-numbers"
+        >
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            13
+          </div>
+        </div>
+        <div
           className="string-container"
           style={
             Object {
@@ -1291,6 +1559,140 @@ exports[`creating chord diagrams renders correctly 1`] = `
       <div
         className="fretboard"
       >
+        <div
+          className="fret-numbers"
+        >
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            1
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            2
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            3
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            4
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            5
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            6
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            7
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            8
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            9
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            10
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            11
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            12
+          </div>
+          <div
+            className="fret-number"
+            style={
+              Object {
+                "width": "7.6923076923076925%",
+              }
+            }
+          >
+            13
+          </div>
+        </div>
         <div
           className="string-container"
           style={
