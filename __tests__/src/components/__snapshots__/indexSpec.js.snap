@@ -19,6 +19,94 @@ exports[`creating chord diagrams renders correctly 1`] = `
         className="fretboard"
       >
         <div
+          className="string-labels"
+        >
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                e
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                b
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                g
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                d
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                a
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                e
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
           className="fret-numbers"
         >
           <div
@@ -870,6 +958,94 @@ exports[`creating chord diagrams renders correctly 1`] = `
         className="fretboard"
       >
         <div
+          className="string-labels"
+        >
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                e
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                b
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                g
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                d
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                a
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "16.666666666666664%",
+              }
+            }
+          >
+            <div>
+              <div>
+                e
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
           className="fret-numbers"
         >
           <div
@@ -1559,6 +1735,66 @@ exports[`creating chord diagrams renders correctly 1`] = `
       <div
         className="fretboard"
       >
+        <div
+          className="string-labels"
+        >
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "25%",
+              }
+            }
+          >
+            <div>
+              <div>
+                a
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "25%",
+              }
+            }
+          >
+            <div>
+              <div>
+                e
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "25%",
+              }
+            }
+          >
+            <div>
+              <div>
+                c
+              </div>
+            </div>
+          </div>
+          <div
+            className="string-label"
+            style={
+              Object {
+                "height": "25%",
+              }
+            }
+          >
+            <div>
+              <div>
+                g
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           className="fret-numbers"
         >

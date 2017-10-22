@@ -23,7 +23,6 @@ export class ChordDiagram extends React.Component {
   }
 
   renderFretNumbers() {
-    console.log('renderFretNumbers');
     return (<div className='fret-numbers'>
       {(new Array(this.props.chordDiagrams.fretCount).fill(null)).map(
         (_, i) => {
@@ -70,6 +69,20 @@ export class ChordDiagram extends React.Component {
       </div>);
   }
 
+  renderStringLabels() {
+    return (<div className='string-labels'>{
+      this.props.chordDiagrams.tuning.slice().reverse().map(
+        (stringNote, i) => {
+          return (
+            <div style={{height: `${this.stringSpacing()}%`}} 
+              className='string-label' key={i}>
+                <div>
+                {this.renderNoteLabel(stringNote)}
+                </div>
+              </div>);
+        })}</div>);
+  }
+
   renderStrings() {
     return this.props.chordDiagrams.getDiagram().map(
       this.renderString.bind(this));
@@ -113,6 +126,7 @@ export class ChordDiagram extends React.Component {
      <div className='chord-diagram'>
         <div className='title'>{this.props.title}</div>
         <div className='fretboard'>
+          {this.renderStringLabels()}
           {this.renderFretNumbers()}
           {this.renderStrings()}
           {this.renderFrets()}

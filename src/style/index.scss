@@ -3,6 +3,7 @@
 
 body * {
   box-sizing: border-box;
+  -webkit-print-color-adjust: exact; 
 }
 
 body {
@@ -40,8 +41,45 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 10px 10px 10px 35px;
+  padding: 10px 10px 10px 53px;
   position: relative;
+
+  .string-labels {
+    position: absolute;
+    height: 100%;
+    left: -47px;
+    color: gray;
+    font-family: Arial;
+    font-size: 11px;
+
+    .string-label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+    .string-label * {
+      display: inline-block;
+    }
+  }
+
+  sup {
+    font-size: 11px;
+    top: -2px;
+    position: relative;
+
+    &.sharp {
+      &::before {
+        content: '♯';
+      }
+    }
+
+    &.flat {
+      &::before {
+        content: '♭';
+      }
+    }
+  }
 
   .delete {
     @media print {
@@ -148,7 +186,6 @@ body {
         top: 50%;
         margin-top: -10px;
         margin-left: -23px;
-        -webkit-print-color-adjust: exact; 
 
         @media(min-width: 576px) {
           margin-left: -25px;
@@ -157,24 +194,6 @@ body {
         * {
           display: inline-block;
         } 
-
-        sup {
-          font-size: 11px;
-          top: -2px;
-          position: relative;
-
-          &.sharp {
-            &::before {
-              content: '♯';
-            }
-          }
-
-          &.flat {
-            &::before {
-              content: '♭';
-            }
-          }
-        }
 
         &.root::before {
           content: ' ';

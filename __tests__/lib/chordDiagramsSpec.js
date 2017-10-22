@@ -118,26 +118,76 @@ describe("ChordDiagrams", () => {
   });
 
   describe("alternate tunings", () => {
-    it(`returns a multidimensional array of strings representing frets matching the notes passed 
-      in the parameter`, () => {
+    describe('ukulele tuning', () => {
+      it(`returns a multidimensional array of strings representing frets matching the notes passed 
+        in the parameter`, () => {
 
-      let chordDiagrams = new ChordDiagrams({
-        fretCount: 18, 
-        tuning: 'g c e a',
-        notes: 'e g# b'
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 18, 
+          tuning: 'g c e a',
+          notes: 'e g# b'
+        });
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+        // a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
+          ['','','b', '','','','', 'e','','','', 'g#','','','b', '','','',''],
+        // e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
+          ['e','','', '','g#','','', 'b','','','', '','e','','', '','g#','',''],
+        // c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#
+          ['','','', '','e','','', '','g#','','', 'b','','','', '','e','',''],
+
+        // g  g# a   a# b  c  c#  d  d# e  f   f# g  g# a   a# b  c  c#
+          ['','g#','', '','b','','', '','','e','', '','','g#','', '','b','',''],
+        ]);    
       });
+    });
 
-      expect(chordDiagrams.getDiagram()).toEqual([
-      // a  a# b   c  c# d  d#  e  f  f# g   g# a  a# b   c  c# d  d#
-        ['','','b', '','','','', 'e','','','', 'g#','','','b', '','','',''],
-      // e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#  g  g# a  a#
-        ['e','','', '','g#','','', 'b','','','', '','e','','', '','g#','',''],
-      // c  c# d   d# e  f  f#  g  g# a  a#  b  c  c# d   d# e  f  f#
-        ['','','', '','e','','', '','g#','','', 'b','','','', '','e','',''],
+    describe('sharp tuning', () => {
+      it(`returns a multidimensional array of strings representing frets matching the notes passed 
+        in the parameter`, () => {
 
-      // g  g# a   a# b  c  c#  d  d# e  f   f# g  g# a   a# b  c  c#
-        ['','g#','', '','b','','', '','','e','', '','','g#','', '','b','',''],
-      ]);    
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 10, 
+          tuning: 'g# c# e# a#',
+          notes: 'e g# b'
+        });
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+        // a# b   c  c# d  d#  e  f  f# g   g#
+          ['','b', '','','','', 'e','','','', 'g#'],
+        // f  f#  g  g# a  a#  b  c  c# d   d#
+          ['','', '','g#','','', 'b','','','', ''],
+        // c# d   d# e  f  f#  g  g# a  a#  b
+          ['','', '','e','','', '','g#','','', 'b'],
+
+        // g# a   a# b  c  c#  d  d# e  f   f#
+          ['g#','', '','b','','', '','','e','', ''],
+        ]);    
+      });
+    });
+
+    describe('flat tuning', () => {
+      fit(`returns a multidimensional array of strings representing frets matching the notes passed 
+        in the parameter`, () => {
+
+        let chordDiagrams = new ChordDiagrams({
+          fretCount: 12, 
+          tuning: 'gb cb eb ab',
+          notes: 'e g# b'
+        });
+
+        expect(chordDiagrams.getDiagram()).toEqual([
+        // g# a a# b   c  c# d  d#  e  f  f# g   g#
+          ['g#', '', '','b', '','','','', 'e','','','', 'g#'],
+        // d# e f  f#  g  g# a  a#  b  c  c# d   d#
+          ['', 'e', '','', '','g#','','', 'b','','','', ''],
+        // b c c# d   d# e  f  f#  g  g# a  a#  b
+          ['b', '', '','', '','e','','', '','g#','','', 'b'],
+
+        // e# g g# a   a# b  c  c#  d  d# e  f   f#
+          ['', '', 'g#','', '','b','','', '','','e','', ''],
+        ]);    
+      });
     });
   });
 });
