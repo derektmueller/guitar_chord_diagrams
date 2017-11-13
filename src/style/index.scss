@@ -38,6 +38,7 @@ body {
 }
 
 .chord-diagram {
+  page-break-inside: avoid;
   width: 100%;
   max-width: 1200px;
   margin: auto;
