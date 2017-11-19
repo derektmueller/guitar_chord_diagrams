@@ -62,6 +62,25 @@ describe("creating chord diagrams", () => {
 
     expect(app.text()).toMatch('e minor (ukulele)');
 
+    addChordDiagram({
+      title: 'e minor, position 1 (guitar)',
+      notes: '0/2/2/0/0/0',
+      root: 'e',
+      fretCount: 13
+    });
+
+    expect(app.text()).toMatch('e minor, position 1 (guitar)');
+
+    addChordDiagram({
+      title: 'a minor pentatonic, position 1 (guitar)',
+      notes: '5 8/5 7/5 7/5 7/5 8/5 8',
+      root: 'e',
+      fretCount: 13
+    });
+
+    expect(app.text()).toMatch(
+      'a minor pentatonic, position 1 (guitar)');
+
     deleteChordDiagram();
 
     expect(app.text()).not.toMatch('e minor pentatonic');
@@ -73,5 +92,14 @@ describe("creating chord diagrams", () => {
     deleteChordDiagram();
 
     expect(app.text()).not.toMatch('e minor (ukulele)');
+
+    deleteChordDiagram();
+
+    expect(app.text()).not.toMatch('e minor, position 1 (guitar)');
+
+    deleteChordDiagram();
+
+    expect(app.text()).not.toMatch(
+      'a minor pentatonic, position 1 (guitar)');
   });
 });
