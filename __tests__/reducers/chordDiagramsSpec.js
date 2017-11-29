@@ -1,5 +1,7 @@
 import chordDiagrams from '../../src/reducers/chordDiagrams';
-import { ADD_CHORD_DIAGRAM, REMOVE_CHORD_DIAGRAM } from '../../src/actions/constants';
+import { 
+  ADD_CHORD_DIAGRAM, REMOVE_CHORD_DIAGRAM, SET_CHORD_DIAGRAMS
+} from '../../src/actions/constants';
 
 describe("chordDiagrams", () => {
   describe("initial state", () => {
@@ -39,6 +41,20 @@ describe("chordDiagrams", () => {
         {b: 2}
       ]);
       expect(initalState).toEqual([{a: 1}, {b: 2}]);
+    });
+  });
+
+  describe("SET_CHORD_DIAGRAMS", () => {
+    it("sets chord diagrams", () => {
+      let config = [{a: 1}, {b: 2}];
+      let payload = {
+        configJSON: JSON.stringify(config)
+      };
+
+      expect(chordDiagrams([], {
+        type: SET_CHORD_DIAGRAMS,
+        payload
+      })).toEqual(config);
     });
   });
 });

@@ -10,6 +10,20 @@ body {
   min-width: 730px;
 }
 
+.diagram-config {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  textarea {
+    min-width: 500px;
+    min-height: 150px;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+}
+
 .config {
   text-align: center;
   padding: 10px 10px 30px;

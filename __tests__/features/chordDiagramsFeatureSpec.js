@@ -26,7 +26,14 @@ describe("creating chord diagrams", () => {
       'change', { target: { value: config.fretCount }});
     app.find('input[name="tuning"]').simulate(
       'change', { target: { value: config.tuning }});
-    app.find('button[type="submit"]').simulate('submit');
+    app.find('.config button[type="submit"]').simulate('submit');
+  }
+
+  function addChordDiagramViaTextareaConfig(config) {
+    app.find('textarea').simulate(
+      'change', { target: { value: config }});
+    app.find('.diagram-config button[type="submit"]').
+      simulate('click');
   }
 
   function deleteChordDiagram() {
@@ -34,6 +41,8 @@ describe("creating chord diagrams", () => {
   }
 
   it('the user is able to create chord diagrams', () => {
+    expect(app.find('textarea').text()).toMatch('[]');
+
     addChordDiagram({
       title: 'e minor pentatonic',
       notes: 'e g a b d',
@@ -42,13 +51,18 @@ describe("creating chord diagrams", () => {
     });
 
     expect(app.text()).toMatch('e minor pentatonic');
+    expect(app.find('textarea').text()).toMatch(
+      "[{\"title\":\"e minor pentatonic\",\"notes\":\"e g a b d\",\"root\":\"e\",\"fretCount\":13}]"
+    );
 
-    addChordDiagram({
-      title: 'e minor (guitar)',
-      notes: 'e g b',
-      root: 'e',
-      fretCount: 13
-    });
+    addChordDiagramViaTextareaConfig(
+      JSON.stringify(
+        [
+          {"title":"e minor pentatonic","notes":"e g a b d","root":"e","fretCount":13},
+          {"title":"e minor (guitar)","notes":"e g b","root":"e","fretCount":13}
+        ]
+      )
+    );
 
     expect(app.text()).toMatch('e minor (guitar)');
 

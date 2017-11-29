@@ -2,7 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Index } from '../../../src/components/Index';
 
-jest.mock('../../../src/components/ChordConfig');
+jest.mock('../../../src/components/DiagramForm');
+jest.mock('../../../src/components/DiagramConfig');
 jest.mock('react-redux', () => { 
   return require('../../helpers/reactReduxMock');
 });

@@ -1,6 +1,7 @@
 import React from 'react';
 import ChordDiagram from "./ChordDiagram.jsx";
-import ChordConfig from "./ChordConfig.jsx";
+import DiagramForm from "./DiagramForm.jsx";
+import DiagramConfig from "./DiagramConfig.jsx";
 import ChordDiagrams from '../../lib/ChordDiagrams.js';
 import ColorPalette from '../../lib/ColorPalette.js';
 import { addChordDiagram } from '../actions/chordDiagrams'
@@ -41,7 +42,8 @@ export class Index extends React.Component {
         <div className='diagrams'>
           {this.renderDiagrams()}
         </div>
-        <ChordConfig />
+        <DiagramForm />
+        <DiagramConfig />
     </div>);
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class ChordConfig extends React.Component {
+export default class DiagramForm extends React.Component {
   render() {
     return null;
   }
