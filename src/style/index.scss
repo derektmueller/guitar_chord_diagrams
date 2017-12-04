@@ -16,10 +16,19 @@ body {
   flex-direction: column;
   align-items: center;
 
+  @media print {
+    display: none;
+  }
+
   textarea {
     min-width: 500px;
     min-height: 150px;
     margin-bottom: 20px;
+    width: 150px;
+  }
+
+  button {
+    margin-top: 15px;
     width: 150px;
   }
 }
