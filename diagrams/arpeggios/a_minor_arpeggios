@@ -1,0 +1,32 @@
+[
+    {
+        "notes": "a c e",
+        "root": "a",
+        "title": "a minor arpeggios (all)"
+    },
+    {
+        "notes": "0/0 3/2/2/1/0 5",
+        "root": "a",
+        "title": "a minor arpeggio (position 4)"
+    },
+    {
+        "notes": "5/3/2/2 5/5/5",
+        "root": "a",
+        "title": "a minor arpeggio (position 5)"
+    },
+    {
+        "notes": "5 8/7/7/5/5/5 8",
+        "root": "a",
+        "title": "a minor arpeggio (position 1)"
+    },
+    {
+        "notes": "8/7/7 10/9/10/8",
+        "root": "a",
+        "title": "a minor arpeggio (position 2)"
+    },
+    {
+        "notes": "8 12/12/10/9/10/8 12",
+        "root": "a",
+        "title": "a minor arpeggio (position 3)"
+    }
+]

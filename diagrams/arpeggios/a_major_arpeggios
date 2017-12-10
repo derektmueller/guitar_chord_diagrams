@@ -1,0 +1,32 @@
+[
+    {
+        "notes": "a c# e",
+        "root": "a",
+        "title": "a major arpeggios (all)"
+    },
+    {
+        "notes": "0/0 4/2/2/2/0 5",
+        "root": "a",
+        "title": "a major arpeggio (position 4)"
+    },
+    {
+        "notes": "5/4/2/2/2 5/5",
+        "root": "a",
+        "title": "a major arpeggio (position 5)"
+    },
+    {
+        "notes": "5 9/7/7/6/5/5 9",
+        "root": "a",
+        "title": "a major arpeggio (position 1)"
+    },
+    {
+        "notes": "9/7/7 11/9/10/9",
+        "root": "a",
+        "title": "a major arpeggio (position 2)"
+    },
+    {
+        "notes": "9 12/12/11/9/10/9 12",
+        "root": "a",
+        "title": "a major arpeggio (position 3)"
+    }
+]
