@@ -40,7 +40,37 @@ describe("creating chord diagrams", () => {
     app.find('.chord-diagram .delete').first().simulate('click');
   }
 
+  function clickLink(selector) {
+    app.find(selector).simulate('click', { button: 0 });
+  }
+
+  xit('the user goes to the home page', () => {
+    expect(app.text()).toMatch('Chords');
+
+    clickLink('.arpeggios .a-major-7');
+
+    expect(app.text()).not.toMatch('Chords');
+
+    expect(app.text()).toMatch('a major 7 arpeggios (all)');
+
+    clickLink('nav a.home');
+
+    expect(app.text()).toMatch('Chords');
+
+    clickLink('.arpeggios .a-minor-7');
+
+    expect(app.text()).not.toMatch('Chords');
+
+    expect(app.text()).toMatch('a minor 7 arpeggios (all)');
+  });
+
   it('the user is able to create chord diagrams', () => {
+    expect(app.text()).toMatch('Chords');
+
+    clickLink('nav a.editor');
+
+    expect(app.text()).toMatch('Title');
+
     expect(app.find('textarea').text()).toMatch('[]');
 
     addChordDiagram({

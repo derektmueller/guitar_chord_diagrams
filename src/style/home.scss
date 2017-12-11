@@ -1,0 +1,12 @@
+
+#home {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+
+  h2 {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+}

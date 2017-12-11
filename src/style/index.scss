@@ -8,7 +8,37 @@ body * {
 
 body {
   min-width: 730px;
+
+  *, button {
+    font-family: Calibre, Helvetica;
+    font-weight: 500;
+  }
 }
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gray;
+  padding: 0 10px;
+
+  @media print {
+    display: none;
+  }
+
+  a {
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+@import 'home';
 
 .diagram-config {
   text-align: center;
@@ -45,6 +75,7 @@ body {
     margin-bottom: 5px;
 
     label {
+      font-size: 15px;
       display: block;
       padding-bottom: 5px;
     }

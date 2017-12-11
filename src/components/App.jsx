@@ -5,7 +5,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 
 import reducers from '../reducers';
 import UrlState from '../middleware/urlState';
-import Index from "./Index.jsx";
+import Routes from "./Routes.jsx";
 const urlState = new UrlState(['chordDiagrams']);
 
 const store = createStore(
@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Index />
+        <Routes />
       </Provider>
     );
   }

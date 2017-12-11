@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Index } from '../../../src/components/Index';
+import { Editor } from '../../../src/components/Editor';
 
 jest.mock('../../../src/components/DiagramForm');
 jest.mock('../../../src/components/DiagramConfig');
@@ -10,7 +10,7 @@ jest.mock('react-redux', () => {
 
 describe("creating chord diagrams", () => {
   it('renders correctly', () => {
-    let index = renderer.create(<Index 
+    let index = renderer.create(<Editor 
       addChordDiagram={() => {}}
       chordDiagrams={[
         { 
