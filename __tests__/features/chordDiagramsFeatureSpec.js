@@ -44,10 +44,10 @@ describe("creating chord diagrams", () => {
     app.find(selector).simulate('click', { button: 0 });
   }
 
-  xit('the user goes to the home page', () => {
+  it('the user goes to the home page', () => {
     expect(app.text()).toMatch('Chords');
 
-    clickLink('.arpeggios .a-major-7');
+    clickLink('.arpeggios > .Amaj7');
 
     expect(app.text()).not.toMatch('Chords');
 
