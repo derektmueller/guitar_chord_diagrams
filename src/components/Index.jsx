@@ -13,14 +13,27 @@ export class Index extends React.Component {
         </div>
         <div className='arpeggios'>
           <h2>Arpeggios</h2>
-          <Link to='/editor' className='Amaj7' onClick={() => {
-            this.props.setChordDiagrams(JSON.stringify
-              (new ChordConfigCreator({
-                description: 'Amaj7 arpeggios'
-              }).get()));
-          }}>Amaj7</Link>
+          {this.renderArpeggioLinks()}
         </div>
       </div>);
+  }
+
+  renderArpeggioLinks() {
+    let notes = ['A', 'E'];
+    let chordTypes = ['-7', 'maj7'];
+    let allChords = chordTypes.map((type) => {
+      return notes.map((note) => `${note}${type}`);
+    }).reduce((x, acc) => acc.concat(x), []);
+
+    return allChords.map((chord) => {
+      return <Link to='/editor' className={chord} key={chord} 
+        onClick={() => {
+          this.props.setChordDiagrams(JSON.stringify
+            (new ChordConfigCreator({
+              description: `${chord} arpeggios`
+            }).get()));
+        }}>{chord}</Link>;
+    });
   }
 }
 

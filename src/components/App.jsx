@@ -8,13 +8,14 @@ import UrlState from '../middleware/urlState';
 import Routes from "./Routes.jsx";
 const urlState = new UrlState(['chordDiagrams']);
 
-const store = createStore(
-  reducers,
-  urlState.getPreloadedState(),
-  applyMiddleware(urlState.getMiddleware()));
 
 export default class App extends React.Component {
   render() {
+    const store = createStore(
+      reducers,
+      urlState.getPreloadedState(),
+      applyMiddleware(urlState.getMiddleware()));
+
     return (
       <Provider store={store}>
         <Routes />

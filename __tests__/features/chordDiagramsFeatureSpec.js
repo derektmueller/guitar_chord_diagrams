@@ -54,10 +54,11 @@ describe("creating chord diagrams", () => {
     expect(app.text()).toMatch('a major 7 arpeggios (all)');
 
     clickLink('nav a.home');
+    clickLink('nav a.home'); // not sure why this is necessary
 
     expect(app.text()).toMatch('Chords');
 
-    clickLink('.arpeggios .a-minor-7');
+    clickLink('.arpeggios > .A-7');
 
     expect(app.text()).not.toMatch('Chords');
 
