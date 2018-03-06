@@ -1,6 +1,6 @@
-describe("ChordDiagrams", () => {
-  let ChordDiagrams = require('../../lib/ChordDiagrams.js');
+import ChordDiagrams from '../../lib/ChordDiagrams.js';
 
+describe("ChordDiagrams", () => {
   describe("getDiagram", () => {
     describe("notes", () => {
       describe("note notation", () => {

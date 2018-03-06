@@ -8,6 +8,7 @@ export default class Routes extends React.Component {
     return <Router>
       <div>
         <nav>
+          <Link to='/'>Fretboard Diagrams</Link>
           <Link to='/' className='home'>Home</Link>
           <Link to='/editor' className='editor'>Editor</Link>
         </nav>

@@ -3,6 +3,7 @@ import ChordConfigCreator from '../../lib/ChordConfigCreator';
 import { setChordDiagrams } from '../actions/chordDiagrams';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import ChromaticScale from '../../lib/ChromaticScale.js';
 
 export class Index extends React.Component {
   render() {
@@ -19,8 +20,9 @@ export class Index extends React.Component {
   }
 
   renderArpeggioLinks() {
-    let notes = ['A', 'E'];
-    let chordTypes = ['-7', 'maj7'];
+    let scale = new ChromaticScale;
+    let notes = scale.sharps.map((str) => str.toUpperCase());
+    let chordTypes = ['7', '-7', 'maj7', '-'];
     let allChords = chordTypes.map((type) => {
       return notes.map((note) => `${note}${type}`);
     }).reduce((x, acc) => acc.concat(x), []);
